@@ -50,10 +50,13 @@ function draw() {
     }
     if(block3.isTouching(ball)&& ball.bounceOff(block3)){
         ball.shapeColor="yellow"
-
+        music.play()
+        ball.velocityX=25;
+        ball.velocityY=20;
     }
     if(block4.isTouching(ball)&& ball.bounceOff(block4)){
         ball.shapeColor="blue"
+        
 
     }
     drawSprites()
